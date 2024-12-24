@@ -1,0 +1,36 @@
+.app {
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.main-content {
+  min-height: calc(100vh - 60px); /* Adjust based on navbar height */
+  padding: 20px;
+}
+
+/* Reset some basic elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Ensure forms are visible and centered */
+.auth-container {
+  display: block !important; /* Force display */
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Add z-index to ensure forms appear above other elements */
+.main-content {
+  position: relative;
+  z-index: 1;
+}

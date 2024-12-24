@@ -1,0 +1,308 @@
+/* Updated Styles with Soft Color Palette */
+
+/* General Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Auth Container Styles */
+.auth-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(to bottom right, #fbc6db, #fee5e8);
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container h2 {
+  text-align: center;
+  color: #4a4a4a;
+  margin-bottom: 25px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-form input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: #f9a1bc;
+}
+
+.auth-button {
+  padding: 12px;
+  background-color: #fcaf58;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.auth-button:hover {
+  background-color: #f9877e;
+}
+
+.auth-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #6a6a6a;
+}
+
+.auth-link a {
+  color: #f9877e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #b71c1c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Task Container */
+.task-container {
+  background: linear-gradient(to bottom right, #ffe4e1, #fcdde3);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.task-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.task-header h2 {
+  color: #5b3c88;
+  margin: 0;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.task-form input,
+.task-form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.task-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.task-list {
+  display: grid;
+  gap: 20px;
+}
+
+.task-item {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.task-item:hover {
+  transform: scale(1.02);
+}
+
+.task-item h3 {
+  margin: 0 0 10px 0;
+  color: #4a4a4a;
+}
+
+.task-item p {
+  margin: 5px 0;
+  color: #6a6a6a;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Button Styles */
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.submit-button {
+  background-color: #fcaf58;
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: #f9877e;
+}
+
+.cancel-button {
+  background-color: #e86b6b;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #d44b4b;
+}
+
+.edit-button {
+  background-color: #cba1f0;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #a883d6;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #da190b;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: rgb(0, 0, 0);
+  padding: 15px 20px;
+  color: gold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
+  color: gold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 5rem;
+  min-height: 5rem;
+}
+
+.navchild_image{
+  width: 4rem;
+  height: auto;
+  margin-right: 35rem;
+}
+
+.navchild{
+  margin: 1rem;
+  font-size: 2rem;
+}
+.navbar-logout {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.navbar-logout:hover {
+  background-color: white;
+  color: #5b3c88;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .auth-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .task-container {
+    margin: 10px;
+  }
+
+  .task-actions {
+    flex-direction: column;
+  }
+
+  .task-actions button {
+    width: 100%;
+  }
+}
+
+.signup-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0px 0px;
+  padding: 0;
+  border-radius: 8px;
+}
+
+.main-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fee5e8;
+  padding: 4rem;
+}
+
+.login-image {
+  display: block;
+  width: auto;
+  height: 40rem;
+  margin: 10px 0px;
+  padding: 0;
+  border-radius: 8px;
+}
